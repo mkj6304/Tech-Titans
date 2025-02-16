@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Question Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Question Generator</h1>
+
+        <!-- Upload Section -->
+        <div class="section">
+            <input type="file" id="uploadInput" accept="application/pdf">
+            <button id="uploadButton">Upload & Extract</button>
+        </div>
+
+        <!-- Extracted Text & Insights -->
+        <div class="section">
+            <h2>Extracted Text</h2>
+            <textarea id="extractedText" readonly></textarea>
+            <h2>Insights</h2>
+            <p id="insights"></p>
+        </div>
+
+        <!-- Generate Questions -->
+        <div class="section">
+            <button id="generateButton">Generate Questions</button>
+            <div id="questions"></div>
+        </div>
+
+        <div class="section">
+            <button id="answerButton">Generate Answers</button>
+            <div id="answers"></div>
+        </div>
+
+        <!-- Translate Questions -->
+        <div class="section">
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+            <button id="translateButton">Translate</button>
+            <div id="translatedQuestions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
